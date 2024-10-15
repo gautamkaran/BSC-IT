@@ -224,6 +224,7 @@
 35. **Write a Python program that accepts a string and calculates the number of digits and letters.**
 
     [Answer]
+
     ```python
     def count_digit_and_latter(input_string):
       letters = 0
@@ -241,6 +242,25 @@
     user_input = input("Enter a string: ")
     count_digit_and_latter(user_input)
     ```
+
+    ***
+
+36. **Write a Python program that checks whether a string represents an integer or not.**  
+    [Answer]
+
+    ```python 
+    def isInteger(input_string):
+      try:
+        # Try to convert the string to an integer
+        int(input_string)
+        print(f"'{input_string}' is an integer")
+      except ValueError:
+        print(f"'{input_string}' is not an integer")
+
+
+    # Accept input from the user
+    user_input = input("Enter a string: ")
+    isInteger(user_input)
+    ```
     ---
-36. **Write a Python program that checks whether a string represents an integer or not.**
 37. **Rewrite the following program after finding and correcting errors and underlining it.**
