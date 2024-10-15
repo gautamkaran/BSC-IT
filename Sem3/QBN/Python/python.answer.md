@@ -43,43 +43,53 @@
     '''------------***************--------------'''
     ```
 
-    ***
-
 13. **Explain features of python programs.**
 
+    [Answer]
+
     1. **Readable and Maintainable Code**
-       - **Clean Syntax**: *Python's syntax is designed to be easy to read and write. Its use of indentation to define code blocks instead of braces makes the code more visually appealing and easier to follow.*
-       - **Concise**: *Python often allows developers to express concepts in fewer lines of code compared to other languages, which enhances readability and maintainability.*
+
+       - **Clean Syntax**: _Python's syntax is designed to be easy to read and write. Its use of indentation to define code blocks instead of braces makes the code more visually appealing and easier to follow._
+       - **Concise**: _Python often allows developers to express concepts in fewer lines of code compared to other languages, which enhances readability and maintainability._
 
     2. **Interpreted Language**
-       - **Dynamic Execution**: *Python code is executed line-by-line by the Python interpreter, which means there’s no need for a separate compilation step. This feature facilitates quick testing and iterative development.*
+
+       - **Dynamic Execution**: _Python code is executed line-by-line by the Python interpreter, which means there’s no need for a separate compilation step. This feature facilitates quick testing and iterative development._
 
     3. **Dynamic Typing**
-       - **Type Flexibility**: *Variables in Python do not need to be explicitly declared with a type. The type is determined at runtime based on the value assigned to the variable. This makes Python code more flexible and easier to write.*
+
+       - **Type Flexibility**: _Variables in Python do not need to be explicitly declared with a type. The type is determined at runtime based on the value assigned to the variable. This makes Python code more flexible and easier to write._
 
     4. **Object-Oriented Programming (OOP)**
-        - **Classes and Objects**: *Python supports OOP principles, allowing you to define classes and create objects. This promotes code reuse and organization.*
-        - **Inheritance and Polymorphism**: *Python supports inheritance, enabling the creation of new classes based on existing ones, and polymorphism, allowing for methods to operate differently based on the object calling them.*
+
+       - **Classes and Objects**: _Python supports OOP principles, allowing you to define classes and create objects. This promotes code reuse and organization._
+       - **Inheritance and Polymorphism**: _Python supports inheritance, enabling the creation of new classes based on existing ones, and polymorphism, allowing for methods to operate differently based on the object calling them._
 
     5. **Functional Programming Features**
-       - **First-Class Functions**: *Functions in Python are first-class objects, meaning they can be passed as arguments, returned from other functions, and assigned to variables.*
-       - **Lambda Functions**: *Python supports anonymous functions using lambda expressions for short-lived operations.*
+
+       - **First-Class Functions**: _Functions in Python are first-class objects, meaning they can be passed as arguments, returned from other functions, and assigned to variables._
+       - **Lambda Functions**: _Python supports anonymous functions using lambda expressions for short-lived operations._
 
     6. **Rich Standard Library**
-       - **Built-in Modules**: *Python comes with a comprehensive standard library that provides modules and packages for a wide range of tasks, from file handling and regular expressions to web development and networking.*
+
+       - **Built-in Modules**: _Python comes with a comprehensive standard library that provides modules and packages for a wide range of tasks, from file handling and regular expressions to web development and networking._
 
     7. **Community and Ecosystem**
-       - **Active Community**: *Python has a large and active community that contributes to its growth through libraries, frameworks, and tools. The community also provides extensive documentation and support.*
+
+       - **Active Community**: _Python has a large and active community that contributes to its growth through libraries, frameworks, and tools. The community also provides extensive documentation and support._
 
     8. **Integration Capabilities**
-       - **Interfacing with Other Languages**: *Python can interface with other programming languages and technologies, such as Java (via Jython), .NET (via IronPython), and C/C++ (via ctypes or Cython).*
+
+       - **Interfacing with Other Languages**: _Python can interface with other programming languages and technologies, such as Java (via Jython), .NET (via IronPython), and C/C++ (via ctypes or Cython)._
 
     9. **Exception Handling**
-       - **Robust Error Handling**: *Python provides a structured way to handle errors and exceptions using try, except, finally, and raise statements. This helps in managing runtime errors gracefully.*
+
+       - **Robust Error Handling**: _Python provides a structured way to handle errors and exceptions using try, except, finally, and raise statements. This helps in managing runtime errors gracefully._
 
     10. **Cross-Platform Compatibility**
-        - **Portability**: *Python programs can run on various operating systems, including Windows, macOS, and Linux, with little to no modification, making it highly portable.*
-     ---
+        - **Portability**: _Python programs can run on various operating systems, including Windows, macOS, and Linux, with little to no modification, making it highly portable._
+
+    ***
 
 14. **Discuss differences between local and global variables.**
 15. **Explain if – else statement with an example.**
@@ -167,6 +177,28 @@
 31. **Explain any 10 string function with an example.**
 32. **Write a Python program to find those numbers which are divisible by 7 and multiples of 5, between 1500 and 2700 (both included).**
 33. **Write a Python program to convert temperatures to and from Celsius and Fahrenheit.**
+
+    [Answer]
+
+    ```python 
+    # Convert Celsius To Fahrenheit
+    def convertCelsiusToFahrenheit(celsius):
+      Fahrenheit = (9/5 * celsius) + 32
+      print(f"Formula:=> ({celsius}°C * 9/5) +  32 =  {Fahrenheit}°F")
+
+    print("Celsius To Fahrenheit")
+    Celsius = 35
+    convertCelsiusToFahrenheit(Celsius)
+
+    # Convert Fahrenheit To Celsius
+    def convertFahrenheitToCelsius(Fahrenheit):
+      Celsius = (Fahrenheit - 32) * 5/9
+      print(f"Formula:=> ({Fahrenheit}°F - 32) * 5/9 =  {Celsius}°C")
+
+    print("Fahrenheit To Celsius ")
+    Fahrenheit = 95
+    convertFahrenheitToCelsius(Fahrenheit)
+    ```
 34. **Write a Python program to guess a number between 1 and 9.
     Note : User is prompted to enter a guess. If the user guesses wrong then the prompt appears again until the guess is correct, on successful guess, user will get a "Well guessed!" message, and the program will exit.**
 
@@ -189,5 +221,6 @@
     ***
 
 35. **Write a Python program that accepts a string and calculates the number of digits and letters.**
+
 36. **Write a Python program that checks whether a string represents an integer or not.**
 37. **Rewrite the following program after finding and correcting errors and underlining it.**
