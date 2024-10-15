@@ -52,6 +52,20 @@
 17. **What are different ways to create strings in python**
 18. **Write a note on string slicing in python**
 19. **Write a program to check if the entered year is leap year or not?**
+    
+    [Answer]
+
+    ```python
+    # Read year form user
+    inputYear = int(input("Enter Year: "))
+
+    # Check isLeap year
+    if(inputYear % 400 == 0) or (inputYear % 4 == 0 and inputYear % 100 != 0):
+      print(f"{inputYear} is leap year.")
+    else:
+      print(f"{inputYear} is not leap year")
+    ```
+
 20. **What is a recursive function? Write its advantages. Explain with examples.**
 21. **What are different type errors in python?**
 22. **Write a bitwise operator in python.**
@@ -108,7 +122,8 @@
       else:
         print("Wrong guess!, Try again")
     ```
-    ---
+
+    ***
 
 35. **Write a Python program that accepts a string and calculates the number of digits and letters.**
 36. **Write a Python program that checks whether a string represents an integer or not.**
