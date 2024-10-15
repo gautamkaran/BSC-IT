@@ -175,7 +175,22 @@
 29. **Explain string operations with an example.**
 30. **Explain the lower(), Split(), find(), len(), isdigit() function with example**
 31. **Explain any 10 string function with an example.**
-32. **Write a Python program to find those numbers which are divisible by 7 and multiples of 5, between 1500 and 2700 (both included).**
+32. **Write a Python program to find those numbers which are divisible by 7 and multiples of 5, between 1500 and 2700 (both included).**  
+    [Answer]
+
+    ```python
+    def findNumber():
+      result = []
+      for num in range(1500, 2701): # Loop through the range 1500 to 2700
+        if num % 7 == 0 and num % 5 == 0: # check if divisible by 7 and multiple of 5
+          result.append(num)
+      return result
+
+    # Call the function and print the result
+    numbers = findNumber()
+    print("Number divisible by 7 and multiple of 5 between 1500 and 2700:=>", numbers)
+    ```
+    ---
 33. **Write a Python program to convert temperatures to and from Celsius and Fahrenheit.**
 
     [Answer]
@@ -199,7 +214,7 @@
     Fahrenheit = 95
     convertFahrenheitToCelsius(Fahrenheit)
     ```
-
+    ---
 34. **Write a Python program to guess a number between 1 and 9.
     Note : User is prompted to enter a guess. If the user guesses wrong then the prompt appears again until the guess is correct, on successful guess, user will get a "Well guessed!" message, and the program will exit.**
 
@@ -248,7 +263,7 @@
 36. **Write a Python program that checks whether a string represents an integer or not.**  
     [Answer]
 
-    ```python 
+    ```python
     def isInteger(input_string):
       try:
         # Try to convert the string to an integer
@@ -262,5 +277,7 @@
     user_input = input("Enter a string: ")
     isInteger(user_input)
     ```
-    ---
+
+    ***
+
 37. **Rewrite the following program after finding and correcting errors and underlining it.**
