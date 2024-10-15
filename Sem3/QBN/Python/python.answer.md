@@ -13,6 +13,36 @@
 11. **What are regular expressions? Explain any five patterns.**
 12. **Write a python program to calculate the area of a triangle and circle and print the result.
     Note: Take input from the user.**
+
+    [Answer]
+
+    ```python
+    '''---------- Area of triangle Program ------- '''
+    # Read Base, Heigth
+    Base = int(input("Enter Base: "))
+    Heigth = int(input("Enter Heigth: "))
+
+    # Formula => AreaOfTriangle = (Base * Heigth) / 2
+    AreaOfTriangle = (Base * Heigth) / 2
+
+    # print result
+    print("Area Of Triangle = ", AreaOfTriangle)
+    '''------------***************--------------'''
+
+
+    '''---------- Area of circle Program --------'''
+    # Read radius
+    radius = int(input("Enter radius: "))
+    pi = 3.14
+
+    # Formula => AreaOfCircle = pi * radius ** 2
+    AreaOfCircle = pi * radius ** 2
+
+    # print result
+    print("Area Of Circle = ", AreaOfCircle)
+    '''------------***************--------------'''
+    ```
+
 13. **Explain features of python programs.**
 14. **Discuss differences between local and global variables.**
 15. **Explain if – else statement with an example.**
