@@ -43,6 +43,8 @@
     '''------------***************--------------'''
     ```
 
+    ***
+
 13. **Explain features of python programs.**
 14. **Discuss differences between local and global variables.**
 15. **Explain if – else statement with an example.**
@@ -90,6 +92,24 @@
 33. **Write a Python program to convert temperatures to and from Celsius and Fahrenheit.**
 34. **Write a Python program to guess a number between 1 and 9.
     Note : User is prompted to enter a guess. If the user guesses wrong then the prompt appears again until the guess is correct, on successful guess, user will get a "Well guessed!" message, and the program will exit.**
+
+    [Answer]
+
+    ```python
+    import random
+    guess = None
+    num = random.randint(1,9)
+
+    while guess !=  num:
+      guess = int(input("Guess the number between 1 to 9:- "))
+
+      if guess ==  num:
+        print("Well guessed!")
+      else:
+        print("Wrong guess!, Try again")
+    ```
+    ---
+
 35. **Write a Python program that accepts a string and calculates the number of digits and letters.**
 36. **Write a Python program that checks whether a string represents an integer or not.**
 37. **Rewrite the following program after finding and correcting errors and underlining it.**
