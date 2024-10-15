@@ -48,11 +48,37 @@
 13. **Explain features of python programs.**
 14. **Discuss differences between local and global variables.**
 15. **Explain if – else statement with an example.**
+
+    [Answer]
+
+    **Definition**: The `if-else` statement is a **_fundamental control structure_** in programming used to make **_decisions_** based on conditions. It allows your program to execute certain code blocks if a condition is true, and different code blocks if the condition is false.
+
+    ```python
+    # Syntax
+    if condition:
+      # Code to execute if the condition is true
+    else:
+      # Code to execute if the condition is false
+    ```
+
+    **Example**: - Let’s say you want to check if a person is eligible to vote. The eligibility criterion is that the person must be 18 years old or older. You can use an `if-else` statement to determine whether they are eligible or not.
+
+    ```python
+    # Define the age of the person
+    age = 20
+
+    # check if the person is 18 or older
+    if age >= 18:
+    print("You are eligible to vote.")
+    else:
+    print("You are not eligible to vote")
+    ```
+    ---
 16. **What are fruitful function and void functions in python**
 17. **What are different ways to create strings in python**
 18. **Write a note on string slicing in python**
 19. **Write a program to check if the entered year is leap year or not?**
-    
+
     [Answer]
 
     ```python
