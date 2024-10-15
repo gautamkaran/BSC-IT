@@ -180,7 +180,7 @@
 
     [Answer]
 
-    ```python 
+    ```python
     # Convert Celsius To Fahrenheit
     def convertCelsiusToFahrenheit(celsius):
       Fahrenheit = (9/5 * celsius) + 32
@@ -199,6 +199,7 @@
     Fahrenheit = 95
     convertFahrenheitToCelsius(Fahrenheit)
     ```
+
 34. **Write a Python program to guess a number between 1 and 9.
     Note : User is prompted to enter a guess. If the user guesses wrong then the prompt appears again until the guess is correct, on successful guess, user will get a "Well guessed!" message, and the program will exit.**
 
@@ -222,5 +223,24 @@
 
 35. **Write a Python program that accepts a string and calculates the number of digits and letters.**
 
+    [Answer]
+    ```python
+    def count_digit_and_latter(input_string):
+      letters = 0
+      digits = 0
+
+      for char in input_string:
+        if char.isalpha(): # check if the character is a letter
+          letters += 1
+        elif char.isdigit(): # check if the digit in character
+          digits += 1
+      print(f"Letters: {letters}")
+      print(f"digits: {digits}")
+
+    # Accept input from the user
+    user_input = input("Enter a string: ")
+    count_digit_and_latter(user_input)
+    ```
+    ---
 36. **Write a Python program that checks whether a string represents an integer or not.**
 37. **Rewrite the following program after finding and correcting errors and underlining it.**
