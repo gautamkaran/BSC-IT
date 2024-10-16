@@ -527,7 +527,78 @@
 
       ***
 
-29. **Explain string operations with an example.**
+29. **Explain string operations with an example.**  
+    In Python, strings support various operations that allow you to manipulate and interact with them effectively. Here are some common string operations explained with examples.
+
+
+    1. Concatenation
+
+        Concatenation is the operation of joining two or more strings end-to-end to create a new string.
+
+        **Example**:
+        ```python
+        str1 = "Hello"
+        str2 = "World"
+        result = str1 + " " + str2  # Concatenating with a space in between
+        print(result)  # Output: Hello World
+        ```
+
+        ---
+
+    2. Repetition
+
+        Repetition involves repeating a string multiple times using the multiplication operator (`*`).
+
+        **Example**:
+        ```python
+        str1 = "Python"
+        result = str1 * 3  # Repeating the string 3 times
+        print(result)  # Output: PythonPythonPython
+        ```
+
+        ---
+
+    3. Slicing
+
+        Slicing is used to extract a portion of a string. It uses the syntax `string[start:end]`, where `start` is the index of the first character and `end` is the index of the character up to (but not including).
+
+        **Example**:
+        ```python
+        str1 = "Hello, World!"
+        sliced_str = str1[7:12]  # Extracting "World"
+        print(sliced_str)  # Output: World
+        ```
+
+        ---
+
+    4. Length
+
+        The `len()` function returns the number of characters in a string.
+
+        **Example**:
+        ```python
+        str1 = "Hello, World!"
+        length = len(str1)  # Getting the length of the string
+        print(length)  # Output: 13
+        ```
+
+        ---
+
+    5. Uppercase and Lowercase Conversion
+
+        You can convert a string to all uppercase or all lowercase using `upper()` and `lower()` methods.
+
+        **Example**:
+        ```python
+        str1 = "Python"
+        upper_str = str1.upper()  # Converting to uppercase
+        lower_str = str1.lower()  # Converting to lowercase
+        print(upper_str)  # Output: PYTHON
+        print(lower_str)  # Output: python
+        ```
+
+    ---
+
 30. **Explain the lower(), Split(), find(), len(), isdigit() function with example**  
     [Answer]
 
