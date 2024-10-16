@@ -132,6 +132,40 @@
     ***
 
 16. **What are fruitful function and void functions in python**
+
+- **Fruitful Function**: A fruitful function is one that returns a value after its execution. The value returned can be of any data type, such as integers, strings, lists, or even other functions.
+
+  **Characteristics**:
+
+  - Returns a Value: _After performing its operation, a fruitful function uses the return statement to send a result back to the caller._
+  - Useful for Further Computation: _The returned value can be used in other operations, stored in variables, or passed to other functions. Example:_
+
+    ```python
+    def multiplay(x,y):
+      return = x * y
+
+    product = multiplay(4, 5)
+    print(product)
+    ```
+
+  - In this example, the multiply function returns the product of x and y, which is then used and printed.
+
+- **Void Function**: _A void function, also known as a procedure or a function with no return value, performs some operations but does not return a value. It implicitly returns None._
+
+  **Characteristics**:
+
+  - Does Not Return a Value: _Void functions either complete their operations without using a return statement or use return without providing a value._
+  - Used for Side Effects: _Often used to perform actions such as modifying global variables, printing information, or interacting with the user, rather than producing a result that needs to be used later. Example:_
+
+    ```python
+    def print_message(message):
+      print(message)
+
+    print_message("Hello, World")
+    ```
+
+  - In this example, print_message does not return any value. It only performs the action of printing the provided message.
+  ---
 17. **What are different ways to create strings in python**
 18. **Write a note on string slicing in python**
 19. **Write a program to check if the entered year is leap year or not?**
