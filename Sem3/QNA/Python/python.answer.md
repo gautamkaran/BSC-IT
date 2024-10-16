@@ -1,6 +1,55 @@
 ## Python QB
 
-1.  **List in python are mutable. Justify**
+1.  **List in python are mutable. Justify**  
+    [Answer]  
+    
+     In Python, lists are considered **mutable** data structures, meaning that their content can be changed after they are created. This mutability provides several advantages and functionalities, which can be demonstrated through various operations:
+
+    1. Modifying Elements  
+       You can change the value of an element in a list using its index. For example:
+
+       ```python
+       my_list = [1, 2, 3, 4]
+       my_list[2] = 10  # Change the third element
+       print(my_list)  # Output: [1, 2, 10, 4]
+       ```
+
+    2. Adding Elements  
+       Lists allow you to add new elements using methods like append() and insert(). For example:
+
+       ```python
+       my_list.append(5)  # Adds 5 to the end of the list
+       print(my_list)  # Output: [1, 2, 10, 4, 5]
+
+       my_list.insert(1, 20)  # Inserts 20 at index 1
+       print(my_list)  # Output: [1, 20, 2, 10, 4, 5]
+       ```
+
+    3. Removing Elements  
+       You can also remove elements from a list using methods like remove() and pop(). For example:
+
+       ```python
+       my_list.remove(10)  # Removes the first occurrence of 10
+       print(my_list)  # Output: [1, 20, 2, 4, 5]
+
+       popped_element = my_list.pop()  # Removes and returns the last element
+       print(popped_element)  # Output: 5
+       print(my_list)  # Output: [1, 20, 2, 4]
+       ```
+
+    4. Reversing or Sorting Lists  
+       Lists can be reversed or sorted in place using the reverse() and sort() methods:
+
+       ```python
+       my_list.sort() # Sorts the list in ascending order
+       print(my_list) # Output: [1, 2, 4, 20]
+
+       my_list.reverse() # Reverses the list
+       print(my_list) # Output: [20, 4, 2, 1]
+       ```
+
+    ***
+
 2.  **Write short note on build in list operators**
 3.  **What are lists? How to define and access the elements of list.**
 4.  **What is dictionary? How create and access it? Explain the properties of dictionary keys.**
@@ -42,7 +91,9 @@
     print("Area Of Circle = ", AreaOfCircle)
     '''------------***************--------------'''
     ```
-    ----
+
+    ***
+
 13. **Explain features of python programs.**
 
     [Answer]
@@ -101,7 +152,9 @@
     | Lifetime       | Created when the block is entered and destroyed when it exits | Retain their value throughout the lifetime of the program                                               |
     | Name conflicts | Can have the same name as variables in other blocks           | Should be used carefully to avoid unintended side effects                                               |
     | Usage          | Temporary storage, specific to a block of code                | Values that need to be accessed and modified by multiple parts of the program                           |
-    ---
+
+    ***
+
 15. **Explain if – else statement with an example.**
 
     [Answer]
@@ -353,39 +406,41 @@
 
 21. **What are different type errors in python?**
 
-    1. **SyntaxError**  
-       This error occurs when the code violates Python's syntax rules. It's like making spelling or grammar mistakes in the English language. Some common reasons for `SyntaxError` include:
+    1.  **SyntaxError**  
+        This error occurs when the code violates Python's syntax rules. It's like making spelling or grammar mistakes in the English language. Some common reasons for `SyntaxError` include:
 
-       - Misspelling a keyword or identifier
-       - Missing quotes
-       - Open parentheses
-       - Mismatched or missing punctuation
+        - Misspelling a keyword or identifier
+        - Missing quotes
+        - Open parentheses
+        - Mismatched or missing punctuation
 
-    2. **NameError**
-       A `NameError` in Python occurs when you attempt to use or access a variable, function, or module name that has not been defined yet or is out of scope.
+    2.  **NameError**
+        A `NameError` in Python occurs when you attempt to use or access a variable, function, or module name that has not been defined yet or is out of scope.
 
-    3. **IndentationError**  
-     An `IndentationError` occurs when the spaces at the beginning of a code line do not follow expected patterns.
+    3.  **IndentationError**  
+        An `IndentationError` occurs when the spaces at the beginning of a code line do not follow expected patterns.
 
-    4. **TypeError**  
-       A `TypeError` occurs when an operation is performed or a function is applied to an object of an inappropriate type.
+    4.  **TypeError**  
+        A `TypeError` occurs when an operation is performed or a function is applied to an object of an inappropriate type.
 
-    5. **IndexError**   
-    This is another common error that occurs when you try to access an element in a list, tuple, or any other sequence using an invalid index. You will typically get this error when the index you provide is out of the valid range.
+    5.  **IndexError**  
+        This is another common error that occurs when you try to access an element in a list, tuple, or any other sequence using an invalid index. You will typically get this error when the index you provide is out of the valid range.
 
-    6. **ValueError**   
-    In Python, a `ValueError` is raised when a built-in operation or function receives an argument that has the right type but an inappropriate value. You can get a `ValueError` in various scenarios, such as:
+    6.  **ValueError**  
+        In Python, a `ValueError` is raised when a built-in operation or function receives an argument that has the right type but an inappropriate value. You can get a `ValueError` in various scenarios, such as:
 
-        - Trying to convert a string to an integer
-        - Accessing an index that doesn't exist in a list
-        - Performing operations with inappropriate values for a specific function or operation.
+            - Trying to convert a string to an integer
+            - Accessing an index that doesn't exist in a list
+            - Performing operations with inappropriate values for a specific function or operation.
 
-    7. **KeyError**   
-      In Python, a `KeyError` occurs when a program tries to access a key in a dictionary that doesn't exist. If you attempt to retrieve a value using a key that is not present in the dictionary, you will get a `KeyError`.
+    7.  **KeyError**  
+        In Python, a `KeyError` occurs when a program tries to access a key in a dictionary that doesn't exist. If you attempt to retrieve a value using a key that is not present in the dictionary, you will get a `KeyError`.
 
-    8. **ZeroDivisionError**   
+    8.  **ZeroDivisionError**  
         In Mathematics, dividing by zero is undefined because we can't share among zero people. Python agrees with Mathematics; that's why it raises a `ZeroDivisionError` whenever you attempt to divide a number by zero.
-    ---
+
+    ***
+
 22. **Write a bitwise operator in python.**
 
     1. AND (&)
