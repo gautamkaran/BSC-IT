@@ -314,6 +314,8 @@
 
 20. **What is a recursive function? Write its advantages. Explain with examples.**
 
+21. **What are different type errors in python?**
+
     1. AND (&)
 
        - Performs a bitwise AND operation between two integers.
@@ -359,27 +361,26 @@
          ```
     5. Left Shift (<<)
 
-        - Shifts the bits of the first operand to the left by the number of positions specified by the second operand. Zeroes are shifted in from the right.
-          Example:
-          ```python
-          a = 12  # binary: 1100
-          result = a << 2  # binary: 110000, which is 48 in decimal
-          print(result)  # Output: 48
-          ```
+       - Shifts the bits of the first operand to the left by the number of positions specified by the second operand. Zeroes are shifted in from the right.
+         Example:
+         ```python
+         a = 12  # binary: 1100
+         result = a << 2  # binary: 110000, which is 48 in decimal
+         print(result)  # Output: 48
+         ```
 
     6. Right Shift (>>)
 
-        - Shifts the bits of the first operand to the right by the number of positions specified by the second operand. The sign bit is shifted in for signed integers.
+       - Shifts the bits of the first operand to the right by the number of positions specified by the second operand. The sign bit is shifted in for signed integers.
 
-          Example:
+         Example:
 
-          ```python
-          a = 12  # binary: 1100
-          result = a >> 2  # binary: 0011, which is 3 in decimal
-          print(result)  # Output: 3
-          ```
+         ```python
+         a = 12  # binary: 1100
+         result = a >> 2  # binary: 0011, which is 3 in decimal
+         print(result)  # Output: 3
+         ```
 
-21. **What are different type errors in python?**
 22. **Write a bitwise operator in python.**
 23. **Write a python program to display the following series**
 
