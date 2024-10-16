@@ -303,6 +303,31 @@
 
 26. **Explain any 5 math functions in python with examples.**
 27. **Explain the use if in and not in operator in with suitable program.**
+
+    [Answer]    
+    - **In Operator**:
+      The in operator returns True if the value is found in the sequence, and False otherwise.
+        Example:
+
+        ```python
+        fruits = ['apple', 'banana', 'cherry']
+        if 'apple' in fruits:
+          print("Apple is in the list")
+        else:
+          print("Apple is not in the list")
+        ```
+    - **not in Operator**: 
+    The in operator returns True if the value is found in the sequence, and False otherwise.  
+        Example:
+
+        ```python
+        fruits = ['apple', 'banana', 'cherry']
+        if 'apple' not in fruits:
+          print("Orange is not in the list")
+        else:
+          print("Orange is in the list")
+        ```
+   ---
 28. **The strings are immutable. Justify.**
 29. **Explain string operations with an example.**
 30. **Explain the lower(), Split(), find(), len(), isdigit() function with example**
