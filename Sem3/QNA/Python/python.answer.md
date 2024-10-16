@@ -168,7 +168,83 @@
 
   ***
 
-17. **What are different ways to create strings in python**
+17. **What are different ways to create strings in python**  
+    [Answer]
+    1. Single Quotes (`'`)
+       You can create a string using single quotes. This is one of the simplest ways to define a string in Python.
+
+       ```python
+       string1 = 'Hello, World!'
+       ```
+
+       - Example: 'Hello', 'Python is fun!'
+       - Single quotes are most commonly used for short strings that do not contain any special characters or quotes.
+
+    2. Double Quotes (")
+       Another way to create strings is by using double quotes. Python treats single and double quotes in the same way, so you can choose either depending on your needs.
+
+       ```python
+       string2 = "Hello, World!"
+       ```
+
+       - Example: "Hello", "Python is great!"
+       - Double quotes are useful when your string contains an apostrophe or single quote inside it.
+
+    3. Triple Quotes (''' or """)
+       Triple quotes allow you to create multiline strings or strings that contain both single and double quotes. This is particularly helpful for writing large blocks of text, such as documentation, or strings that span multiple lines.
+
+       - Single triple quotes ('''):
+
+       ```python
+       string4 = '''This is a multi-line string.'''
+       ```
+
+       - Double triple quotes ("""):
+
+       ```python
+       string5 = """This is another multi-line string."""
+       ```
+
+    4. String Concatenation (+):
+       Strings can be concatenated (combined) using the + operator. This is helpful when you want to merge multiple strings into one.
+       ```python
+       part1 = 'Hello, '
+       part2 = 'World!'
+       string6 = part1 + part2  # Output: 'Hello, World!'
+       ```
+    5. f-strings (String Interpolation):
+       Introduced in Python 3.6, f-strings (formatted string literals) allow you to embed expressions directly inside a string using curly braces {}. This is a very efficient and readable way to format strings.
+
+       ```python
+       name = 'Alice'
+       age = 30
+       string7 = f'Hello, my name is {name} and I am {age} years old.'
+       # Output: 'Hello, my name is Alice and I am 30 years old.'
+       ```
+
+       - f-strings also allow for complex expressions.
+
+    6. format() Method:
+       The format() method is a flexible way to create strings by embedding values within a string. It allows you to use placeholders ({}) that are replaced with values provided to the format() function.
+
+       ```python
+       string9 = 'Hello, {}!'.format('Bob')
+       # Output: 'Hello, Bob!'
+       ```
+
+    7. % Operator (Old-Style String Formatting):
+       The % operator is an older method of formatting strings, similar to the sprintf function in C. It uses placeholders like %s (for strings), %d (for integers), and %f (for floating-point numbers).
+       ```python
+       string11 = 'Hello, %s!' % 'Charlie'
+       # Output: 'Hello, Charlie!'
+       ```
+    8. str() Function:
+       The str() function is used to convert other data types (e.g., integers, floats, lists) into strings.
+       ```python
+       num = 100
+       string13 = str(num)  # Converts integer to string: "100"
+       ```
+     ---
 18. **Write a note on string slicing in python**  
     String slicing is a technique in Python to extract a portion (or "slice") of a string. Python strings are sequences of characters, and you can access specific parts of them by using indexing and slicing.
 
@@ -185,6 +261,7 @@
     - `step`: The interval between characters (optional).
 
     If any of these values are omitted, Python uses the following defaults:
+
     - `start`: 0 (beginning of the string).
     - `end`: Length of the string (end of the string).
     - `step`: 1 (every character).
@@ -213,7 +290,8 @@
     - **`end` index is exclusive**: The character at the `end` index is not included in the slice.
     - **Negative indices**: These count from the end of the string, where `-1` is the last character, `-2` is the second-last, and so on.
 
-    ---
+    ***
+
 19. **Write a program to check if the entered year is leap year or not?**
 
     [Answer]
@@ -228,6 +306,8 @@
     else:
       print(f"{inputYear} is not leap year")
     ```
+
+    ***
 
 20. **What is a recursive function? Write its advantages. Explain with examples.**
 21. **What are different type errors in python?**
@@ -483,7 +563,7 @@
 
     ***
 
-    1. Unchangeable Content
+    1.  Unchangeable Content
 
         Once you create a string, its content is fixed and cannot be altered. Python does not allow modifying strings in place. If any operation seems to modify a string, it actually creates a **new string** instead of altering the original one.
 
@@ -499,26 +579,26 @@
 
         ***
 
-     2. No In-Place Modification
+    2.  No In-Place Modification
 
-          You cannot change individual characters in a string because strings do not support item assignment. Trying to do so will result in a `TypeError`.
+        You cannot change individual characters in a string because strings do not support item assignment. Trying to do so will result in a `TypeError`.
 
-          **Example**:
+        **Example**:
 
-          ```python
-          s = "Python"
-          # Trying to modify the first character raises a TypeError
-          try:
-              s[0] = 'J'
-          except TypeError as e:
-              print("Error:", e)  # Output: Error: 'str' object does not support item assignment
-          ```
+        ```python
+        s = "Python"
+        # Trying to modify the first character raises a TypeError
+        try:
+            s[0] = 'J'
+        except TypeError as e:
+            print("Error:", e)  # Output: Error: 'str' object does not support item assignment
+        ```
 
-          This occurs because Python strings are immutable, and you cannot alter their individual elements.
+        This occurs because Python strings are immutable, and you cannot alter their individual elements.
 
-          ***
+        ***
 
-    3. Efficiency and Performance
+    3.  Efficiency and Performance
 
         Immutability allows Python to optimize memory usage by reusing string objects, especially for frequently used small string literals. Python can point multiple variables to the same string object if its content is the same, saving memory and improving performance.
 
@@ -534,7 +614,7 @@
 
         ***
 
-    4. Hashing and Dictionary Keys
+    4.  Hashing and Dictionary Keys
 
         Strings can be used as keys in dictionaries and elements in sets because they are **hashable**. An object’s hash value remains constant if the object is immutable. If strings were mutable, their hash values could change, making them unsuitable for use as dictionary keys.
 
@@ -549,9 +629,9 @@
 
         ***
 
-    5. Safety
+    5.  Safety
 
-          Immutability ensures that strings are safe from accidental changes, which is crucial in multi-threaded environments. When different parts of a program share the same string, immutability guarantees that no thread can alter the string's content unexpectedly.
+            Immutability ensures that strings are safe from accidental changes, which is crucial in multi-threaded environments. When different parts of a program share the same string, immutability guarantees that no thread can alter the string's content unexpectedly.
 
         **Example Demonstrating Immutability**:
 
@@ -569,79 +649,83 @@
         print("New string:", new_s)  # Output: Mutable
         ```
 
-      ***
+        ***
 
 29. **Explain string operations with an example.**  
     In Python, strings support various operations that allow you to manipulate and interact with them effectively. Here are some common string operations explained with examples.
 
-
     1. Concatenation
 
-        Concatenation is the operation of joining two or more strings end-to-end to create a new string.
+       Concatenation is the operation of joining two or more strings end-to-end to create a new string.
 
-        **Example**:
-        ```python
-        str1 = "Hello"
-        str2 = "World"
-        result = str1 + " " + str2  # Concatenating with a space in between
-        print(result)  # Output: Hello World
-        ```
+       **Example**:
 
-        ---
+       ```python
+       str1 = "Hello"
+       str2 = "World"
+       result = str1 + " " + str2  # Concatenating with a space in between
+       print(result)  # Output: Hello World
+       ```
+
+       ***
 
     2. Repetition
 
-        Repetition involves repeating a string multiple times using the multiplication operator (`*`).
+       Repetition involves repeating a string multiple times using the multiplication operator (`*`).
 
-        **Example**:
-        ```python
-        str1 = "Python"
-        result = str1 * 3  # Repeating the string 3 times
-        print(result)  # Output: PythonPythonPython
-        ```
+       **Example**:
 
-        ---
+       ```python
+       str1 = "Python"
+       result = str1 * 3  # Repeating the string 3 times
+       print(result)  # Output: PythonPythonPython
+       ```
+
+       ***
 
     3. Slicing
 
-        Slicing is used to extract a portion of a string. It uses the syntax `string[start:end]`, where `start` is the index of the first character and `end` is the index of the character up to (but not including).
+       Slicing is used to extract a portion of a string. It uses the syntax `string[start:end]`, where `start` is the index of the first character and `end` is the index of the character up to (but not including).
 
-        **Example**:
-        ```python
-        str1 = "Hello, World!"
-        sliced_str = str1[7:12]  # Extracting "World"
-        print(sliced_str)  # Output: World
-        ```
+       **Example**:
 
-        ---
+       ```python
+       str1 = "Hello, World!"
+       sliced_str = str1[7:12]  # Extracting "World"
+       print(sliced_str)  # Output: World
+       ```
+
+       ***
 
     4. Length
 
-        The `len()` function returns the number of characters in a string.
+       The `len()` function returns the number of characters in a string.
 
-        **Example**:
-        ```python
-        str1 = "Hello, World!"
-        length = len(str1)  # Getting the length of the string
-        print(length)  # Output: 13
-        ```
+       **Example**:
 
-        ---
+       ```python
+       str1 = "Hello, World!"
+       length = len(str1)  # Getting the length of the string
+       print(length)  # Output: 13
+       ```
+
+       ***
 
     5. Uppercase and Lowercase Conversion
 
-        You can convert a string to all uppercase or all lowercase using `upper()` and `lower()` methods.
+       You can convert a string to all uppercase or all lowercase using `upper()` and `lower()` methods.
 
-        **Example**:
-        ```python
-        str1 = "Python"
-        upper_str = str1.upper()  # Converting to uppercase
-        lower_str = str1.lower()  # Converting to lowercase
-        print(upper_str)  # Output: PYTHON
-        print(lower_str)  # Output: python
-        ```
+       **Example**:
 
-    ---
+       ```python
+       str1 = "Python"
+       upper_str = str1.upper()  # Converting to uppercase
+       lower_str = str1.lower()  # Converting to lowercase
+       print(upper_str)  # Output: PYTHON
+       print(lower_str)  # Output: python
+       ```
+
+    ***
 
 30. **Explain the lower(), Split(), find(), len(), isdigit() function with example**  
     [Answer]
