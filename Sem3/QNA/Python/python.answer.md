@@ -300,8 +300,96 @@
     # Display the result
     print(f"The area of the rectangle is: {area}")
     ```
+    ---
 
 26. **Explain any 5 math functions in python with examples.**
+
+    [Answer]
+
+    1. **`abs()`**:
+        - **Description**: The `abs()` function returns the absolute value of a number. The absolute value is the non-negative value of a number without regard to its sign.
+
+        - **Syntax**: `abs(x)`
+          - `x`: A number (integer or float).
+
+        - **Example**:
+          ```python
+          num = -10
+          result = abs(num)
+          print(result)  # Output: 10
+          ```
+
+       ---
+
+    2. **`pow()`**:
+        - **Description**: The `pow()` function returns the value of `x` raised to the power of `y` (i.e., `x^y`). Optionally, you can provide a third argument, `z`, to compute the result modulo `z` (i.e., `(x^y) % z`).
+
+        - **Syntax**: `pow(x, y[, z])`
+          - `x`: The base number.
+          - `y`: The exponent.
+          - `z`: Optional. The modulus.
+
+        - **Example**:
+          ```python
+          result = pow(2, 3)  # 2^3 = 8
+          print(result)  # Output: 8
+
+          # With modulus
+          result = pow(2, 3, 3)  # (2^3) % 3 = 2
+          print(result)  # Output: 2
+          ```
+
+       ---
+
+    3. **`round()`**:
+        - **Description**: The `round()` function rounds a floating-point number to a specified number of decimal places. If the number of decimal places is not provided, it rounds to the nearest integer.
+
+        - **Syntax**: `round(number[, ndigits])`
+          - `number`: The number to round.
+          - `ndigits`: Optional. The number of decimal places to round to.
+
+        - **Example**:
+          ```python
+          num = 5.6789
+          rounded_num = round(num, 2)
+          print(rounded_num)  # Output: 5.68
+
+          rounded_num = round(num)
+          print(rounded_num)  # Output: 6
+          ```
+
+       ---
+
+    4. **`math.sqrt()`**:
+        - **Description**: The `math.sqrt()` function returns the square root of a given number. This function is part of the `math` module.
+
+        - **Syntax**: `math.sqrt(x)`
+          - `x`: The number for which to find the square root. It must be a non-negative number.
+
+        - **Example**:
+          ```python
+          import math
+          result = math.sqrt(16)
+          print(result)  # Output: 4.0
+          ```
+
+       ---
+
+    5. **`math.factorial()`**:
+        - **Description**: The `math.factorial()` function returns the factorial of a given non-negative integer. Factorial of a number `n` is the product of all positive integers less than or equal to `n`.
+
+        - **Syntax**: `math.factorial(x)`
+          - `x`: A non-negative integer.
+
+        - **Example**:
+          ```python
+          import math
+          result = math.factorial(5)
+          print(result)  # Output: 120  (5! = 5 * 4 * 3 * 2 * 1)
+          ```
+
+    ---
+
 27. **Explain the use if in and not in operator in with suitable program.**
 
     [Answer]
