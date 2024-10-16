@@ -115,6 +115,7 @@
 6.  **What is Exception? List and explain any five built in Exceptions in Python.**
 7.  **Write short note on Exception with arguments and user defined exception.**
 8.  **What is file? What are its operating modes?**
+
 9.  **Write short note on file object attributes and file methods.**
 10. **Write a short program to deal with text file in Python.**
 
@@ -132,36 +133,36 @@
 12. **Write a python program to calculate the area of a triangle and circle and print the result.
     Note: Take input from the user.**
 
-        [Answer]
+      [Answer]
 
-        ```python
-        '''---------- Area of triangle Program ------- '''
-        # Read Base, Heigth
-        Base = int(input("Enter Base: "))
-        Heigth = int(input("Enter Heigth: "))
+      ```python
+      '''---------- Area of triangle Program ------- '''
+      # Read Base, Heigth
+      Base = int(input("Enter Base: "))
+      Heigth = int(input("Enter Heigth: "))
 
-        # Formula => AreaOfTriangle = (Base * Heigth) / 2
-        AreaOfTriangle = (Base * Heigth) / 2
+      # Formula => AreaOfTriangle = (Base * Heigth) / 2
+      AreaOfTriangle = (Base * Heigth) / 2
 
-        # print result
-        print("Area Of Triangle = ", AreaOfTriangle)
-        '''------------***************--------------'''
+      # print result
+      print("Area Of Triangle = ", AreaOfTriangle)
+      '''------------***************--------------'''
 
 
-        '''---------- Area of circle Program --------'''
-        # Read radius
-        radius = int(input("Enter radius: "))
-        pi = 3.14
+      '''---------- Area of circle Program --------'''
+      # Read radius
+      radius = int(input("Enter radius: "))
+      pi = 3.14
 
-        # Formula => AreaOfCircle = pi * radius ** 2
-        AreaOfCircle = pi * radius ** 2
+      # Formula => AreaOfCircle = pi * radius ** 2
+      AreaOfCircle = pi * radius ** 2
 
-        # print result
-        print("Area Of Circle = ", AreaOfCircle)
-        '''------------***************--------------'''
-        ```
+      # print result
+      print("Area Of Circle = ", AreaOfCircle)
+      '''------------***************--------------'''
+      ```
 
-        ***
+     ***
 
 13. **Explain features of python programs.**
 
