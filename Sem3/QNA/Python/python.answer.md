@@ -92,6 +92,16 @@
     ***
 
 14. **Discuss differences between local and global variables.**
+
+    | Aspect         | Local Variables                                               | Global Variables                                                                                        |
+    | :------------- | :------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------ |
+    | Scope          | limited to the block code                                     | Accessible throughout the program                                                                       |
+    | Declaration    | Typically within functions or specific blocks                 | Outside of any function or block                                                                        |
+    | Access         | Accessible only within the block where they are declared      | Access Accessible only within the block where they are declared Accessible from any part of the program |
+    | Lifetime       | Created when the block is entered and destroyed when it exits | Retain their value throughout the lifetime of the program                                               |
+    | Name conflicts | Can have the same name as variables in other blocks           | Should be used carefully to avoid unintended side effects                                               |
+    | Usage          | Temporary storage, specific to a block of code                | Values that need to be accessed and modified by multiple parts of the program                           |
+
 15. **Explain if – else statement with an example.**
 
     [Answer]
@@ -190,7 +200,9 @@
     numbers = findNumber()
     print("Number divisible by 7 and multiple of 5 between 1500 and 2700:=>", numbers)
     ```
-    ---
+
+    ***
+
 33. **Write a Python program to convert temperatures to and from Celsius and Fahrenheit.**
 
     [Answer]
@@ -214,7 +226,9 @@
     Fahrenheit = 95
     convertFahrenheitToCelsius(Fahrenheit)
     ```
-    ---
+
+    ***
+
 34. **Write a Python program to guess a number between 1 and 9.
     Note : User is prompted to enter a guess. If the user guesses wrong then the prompt appears again until the guess is correct, on successful guess, user will get a "Well guessed!" message, and the program will exit.**
 
