@@ -42,7 +42,7 @@
     print("Area Of Circle = ", AreaOfCircle)
     '''------------***************--------------'''
     ```
-
+    ----
 13. **Explain features of python programs.**
 
     [Answer]
@@ -101,7 +101,7 @@
     | Lifetime       | Created when the block is entered and destroyed when it exits | Retain their value throughout the lifetime of the program                                               |
     | Name conflicts | Can have the same name as variables in other blocks           | Should be used carefully to avoid unintended side effects                                               |
     | Usage          | Temporary storage, specific to a block of code                | Values that need to be accessed and modified by multiple parts of the program                           |
-
+    ---
 15. **Explain if – else statement with an example.**
 
     [Answer]
