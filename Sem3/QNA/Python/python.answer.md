@@ -304,30 +304,34 @@
 26. **Explain any 5 math functions in python with examples.**
 27. **Explain the use if in and not in operator in with suitable program.**
 
-    [Answer]    
+    [Answer]
+
     - **In Operator**:
       The in operator returns True if the value is found in the sequence, and False otherwise.
-        Example:
+      Example:
 
-        ```python
-        fruits = ['apple', 'banana', 'cherry']
-        if 'apple' in fruits:
-          print("Apple is in the list")
-        else:
-          print("Apple is not in the list")
-        ```
-    - **not in Operator**: 
-    The in operator returns True if the value is found in the sequence, and False otherwise.  
-        Example:
+      ```python
+      fruits = ['apple', 'banana', 'cherry']
+      if 'apple' in fruits:
+        print("Apple is in the list")
+      else:
+        print("Apple is not in the list")
+      ```
 
-        ```python
-        fruits = ['apple', 'banana', 'cherry']
-        if 'apple' not in fruits:
-          print("Orange is not in the list")
-        else:
-          print("Orange is in the list")
-        ```
-   ---
+    - **not in Operator**:
+      The in operator returns True if the value is found in the sequence, and False otherwise.  
+       Example:
+
+          ```python
+          fruits = ['apple', 'banana', 'cherry']
+          if 'apple' not in fruits:
+            print("Orange is not in the list")
+          else:
+            print("Orange is in the list")
+          ```
+
+    ***
+
 28. **The strings are immutable. Justify.**
 29. **Explain string operations with an example.**
 30. **Explain the lower(), Split(), find(), len(), isdigit() function with example**
@@ -442,3 +446,134 @@
     ***
 
 37. **Rewrite the following program after finding and correcting errors and underlining it.**
+
+    ```
+    # Quetion
+    250 =  Number
+    WHILE Number <= 1000:
+      if Number => 750
+        print(Number)
+        Number =  Number + 100
+      else
+      print(Number*2)
+    Number = Number + 50
+    ```
+
+    ```python
+    # Answer
+    Number = 250 # Deceration to variable
+
+    while Number <= 1000:
+        if Number >= 750:
+            print(Number)
+            Number = Number + 100 # Number = 350
+        else:
+            print(Number * 2) # Number = 500
+            Number = Number + 50 # Number = 550
+
+
+    ```
+
+    ***
+
+    ```
+    # Quetion
+    STRING = ""WELCOME NOTE""
+    for S in range(0, 8):
+      print(STRING(S))
+    ```
+
+    ```python
+    # Answer
+    STRING = "WELCOME NOTE" # String not double "
+    for s in range(0, 8):
+      print(STRING[s])
+    ```
+
+    ***
+
+    ```
+    # Quetion
+    Val = int(rawinput("Value: "))
+    Adder = 0
+    for C in range(1, Val, 3):
+      Adder += C
+      if C % 2 == 0:
+        print(C * 10)
+      else:
+        print(C * 5)
+
+     print(Adder)
+
+    ```
+
+    ```python
+    # Answer
+    Val = int(input("Value: "))  # Changed rawinput() to input() for Python 3
+    Adder = 0
+    for C in range(1, Val + 1, 3):  # Changed Val to Val + 1 to include 'Val' in the range
+      Adder += C
+      if C % 2 == 0:
+        print(C * 10)
+      else:
+        print(C * 5)
+
+    print(Adder)  # Fixed the indentation for print(Adder)
+    ```
+
+    ***
+
+    ```
+    # Quetion
+    i == 1
+    a = init(input("ENTER FIRST NUMBER"))
+    FOR i in range(1,11):
+      print(a, "* =",i "=", a*i)
+    ```
+
+    ```python
+    # answer
+    i = 1
+    a = int(input("ENTER FIRST NUMBER: "))
+    for i in range(1, 11):
+     print(a, "*", i, "=", a * i)
+
+    ```
+
+    ***
+
+    ```
+    # Quetion
+    25 = Val
+    for I in the range(0, Val)
+      if I % 2 == 0:
+        print(I+1)
+      Else:
+        print(I-1)
+    ```
+
+    ```python
+    Val = 25
+    for I in range(9, Val):
+      if I % 2 == 0:
+        print(I + 1)
+      else:
+        print(I - 1)
+    ```
+
+    ***
+
+    ```
+    a = "1"
+    while a >= 10:
+    print("Value of a= ", a)
+    a =+ 1
+    ```
+
+    ```python
+    a = 1
+    while a <= 10:
+      print("Value of a = ", a)
+      a += 1
+    ```
+ ---
