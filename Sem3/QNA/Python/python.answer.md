@@ -165,7 +165,9 @@
     ```
 
   - In this example, print_message does not return any value. It only performs the action of printing the provided message.
-  ---
+
+  ***
+
 17. **What are different ways to create strings in python**
 18. **Write a note on string slicing in python**
 19. **Write a program to check if the entered year is leap year or not?**
@@ -212,6 +214,64 @@
 ---
 
 24. **Write a short note on looping structure in python.**
+
+    In Python, looping structures allow you to execute a block of code multiple times. They are essential for iterating over sequences or repeating actions without writing redundant code. Python provides two primary looping structures:
+      1. **for Loop**:- The for loop is used to iterate over a sequence (like a list, tuple, string, or range) and execute a block of code for each element in the sequence. 
+    
+          ```python
+          # syntax
+          for variable in sequence: 
+              # Code block to execute 
+          ```
+          Example: 
+          ```python
+          for i in range(5): 
+            print(i)
+          ``` 
+    
+          Explanation:  
+          -	range(5) generates a sequence of numbers from 0 to 4. 
+          -	The loop iterates over this sequence, and i takes each value from 0 to 4, printing each value. 
+    
+     2. **while Loop**:- The while loop repeatedly executes a block of code as long as a specified condition remains True. 
+        ```python
+         # syntax
+        while condition: 
+          # Code block to execute Example: 
+        ```
+        Example:   
+        ```python
+        i = 0
+        while i < 5:
+          print(i)     
+          i += 1 
+        ```   
+    
+        Explanation: 
+
+          - The loop continues to execute as long as i < 5 is True. 
+          -	i is incremented by 1 on each iteration until it no longer meets the condition. 
+    
+      3. Loop Control Statements  
+        Python also provides control statements that modify the flow of loops:   
+         - `break`: Exits the loop entirely. 
+         - `continue`: Skips the rest of the code inside the loop for the current iteration and moves to the next iteration. 
+         -	`else`: An optional block that can be added after the loop. It executes if the loop completes normally (i.e., not terminated by a break). 
+        Example: 
+
+          ```python
+          for i in range(5):  
+            if i == 3:     
+              break     
+              print(i) else: 
+              print("Loop completed without a break.")
+          ``` 
+          Explanation: 
+          -	The break statement terminates the loop when i equals 3. 
+          -	The else block will not execute because the loop was terminated by break. 
+      
+ 
+
 25. **Write a short program to demonstrate the use of parameterized functions.**
 26. **Explain any 5 math functions in python with examples.**
 27. **Explain the use if in and not in operator in with suitable program.**
