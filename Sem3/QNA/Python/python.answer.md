@@ -170,6 +170,7 @@
 
 17. **What are different ways to create strings in python**  
     [Answer]
+
     1. Single Quotes (`'`)
        You can create a string using single quotes. This is one of the simplest ways to define a string in Python.
 
@@ -244,7 +245,9 @@
        num = 100
        string13 = str(num)  # Converts integer to string: "100"
        ```
-     ---
+
+    ***
+
 18. **Write a note on string slicing in python**  
     String slicing is a technique in Python to extract a portion (or "slice") of a string. Python strings are sequences of characters, and you can access specific parts of them by using indexing and slicing.
 
@@ -310,6 +313,72 @@
     ***
 
 20. **What is a recursive function? Write its advantages. Explain with examples.**
+
+    1. AND (&)
+
+       - Performs a bitwise AND operation between two integers.
+
+         Example:
+
+         ```python
+         a = 12  # binary: 1100
+         b = 7   # binary: 0111
+         result = a & b  # binary: 0100, which is 4 in decimal
+         print(result)  # Output: 4
+         ```
+
+    2. OR (|):
+       - Performs a bitwise OR operation between two integers.
+         Example:
+         ```python
+           a = 12  # binary: 1100
+           b = 7   # binary: 0111
+           result = a | b  # binary: 1111, which is 15 in decimal
+           print(result)  # Output: 15
+         ```
+    3. XOR (^)
+
+       - Performs a bitwise XOR (exclusive OR) operation between two integers.
+
+         Example:
+
+         ```python
+           a = 12  # binary: 1100
+           b = 7   # binary: 0111
+           result = a ^ b  # binary: 1011, which is 11 in decimal
+           print(result)  # Output: 11
+         ```
+
+    4. NOT (~)
+       - Performs a bitwise NOT operation, which inverts all the bits of the integer.
+         Example:
+         ```python
+          a = 12  # binary: 1100
+          result = ~a  # binary: ...11110011 (2's complement representation), which is -13 in decimal
+          print(result)  # Output: -13
+         ```
+    5. Left Shift (<<)
+
+        - Shifts the bits of the first operand to the left by the number of positions specified by the second operand. Zeroes are shifted in from the right.
+          Example:
+          ```python
+          a = 12  # binary: 1100
+          result = a << 2  # binary: 110000, which is 48 in decimal
+          print(result)  # Output: 48
+          ```
+
+    6. Right Shift (>>)
+
+        - Shifts the bits of the first operand to the right by the number of positions specified by the second operand. The sign bit is shifted in for signed integers.
+
+          Example:
+
+          ```python
+          a = 12  # binary: 1100
+          result = a >> 2  # binary: 0011, which is 3 in decimal
+          print(result)  # Output: 3
+          ```
+
 21. **What are different type errors in python?**
 22. **Write a bitwise operator in python.**
 23. **Write a python program to display the following series**
