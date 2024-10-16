@@ -300,95 +300,108 @@
     # Display the result
     print(f"The area of the rectangle is: {area}")
     ```
-    ---
+
+    ***
 
 26. **Explain any 5 math functions in python with examples.**
 
     [Answer]
 
     1. **`abs()`**:
-        - **Description**: The `abs()` function returns the absolute value of a number. The absolute value is the non-negative value of a number without regard to its sign.
 
-        - **Syntax**: `abs(x)`
-          - `x`: A number (integer or float).
+       - **Description**: The `abs()` function returns the absolute value of a number. The absolute value is the non-negative value of a number without regard to its sign.
 
-        - **Example**:
-          ```python
-          num = -10
-          result = abs(num)
-          print(result)  # Output: 10
-          ```
+       - **Syntax**: `abs(x)`
 
-       ---
+         - `x`: A number (integer or float).
+
+       - **Example**:
+         ```python
+         num = -10
+         result = abs(num)
+         print(result)  # Output: 10
+         ```
+
+       ***
 
     2. **`pow()`**:
-        - **Description**: The `pow()` function returns the value of `x` raised to the power of `y` (i.e., `x^y`). Optionally, you can provide a third argument, `z`, to compute the result modulo `z` (i.e., `(x^y) % z`).
 
-        - **Syntax**: `pow(x, y[, z])`
-          - `x`: The base number.
-          - `y`: The exponent.
-          - `z`: Optional. The modulus.
+       - **Description**: The `pow()` function returns the value of `x` raised to the power of `y` (i.e., `x^y`). Optionally, you can provide a third argument, `z`, to compute the result modulo `z` (i.e., `(x^y) % z`).
 
-        - **Example**:
-          ```python
-          result = pow(2, 3)  # 2^3 = 8
-          print(result)  # Output: 8
+       - **Syntax**: `pow(x, y[, z])`
 
-          # With modulus
-          result = pow(2, 3, 3)  # (2^3) % 3 = 2
-          print(result)  # Output: 2
-          ```
+         - `x`: The base number.
+         - `y`: The exponent.
+         - `z`: Optional. The modulus.
 
-       ---
+       - **Example**:
+
+         ```python
+         result = pow(2, 3)  # 2^3 = 8
+         print(result)  # Output: 8
+
+         # With modulus
+         result = pow(2, 3, 3)  # (2^3) % 3 = 2
+         print(result)  # Output: 2
+         ```
+
+       ***
 
     3. **`round()`**:
-        - **Description**: The `round()` function rounds a floating-point number to a specified number of decimal places. If the number of decimal places is not provided, it rounds to the nearest integer.
 
-        - **Syntax**: `round(number[, ndigits])`
-          - `number`: The number to round.
-          - `ndigits`: Optional. The number of decimal places to round to.
+       - **Description**: The `round()` function rounds a floating-point number to a specified number of decimal places. If the number of decimal places is not provided, it rounds to the nearest integer.
 
-        - **Example**:
-          ```python
-          num = 5.6789
-          rounded_num = round(num, 2)
-          print(rounded_num)  # Output: 5.68
+       - **Syntax**: `round(number[, ndigits])`
 
-          rounded_num = round(num)
-          print(rounded_num)  # Output: 6
-          ```
+         - `number`: The number to round.
+         - `ndigits`: Optional. The number of decimal places to round to.
 
-       ---
+       - **Example**:
+
+         ```python
+         num = 5.6789
+         rounded_num = round(num, 2)
+         print(rounded_num)  # Output: 5.68
+
+         rounded_num = round(num)
+         print(rounded_num)  # Output: 6
+         ```
+
+       ***
 
     4. **`math.sqrt()`**:
-        - **Description**: The `math.sqrt()` function returns the square root of a given number. This function is part of the `math` module.
 
-        - **Syntax**: `math.sqrt(x)`
-          - `x`: The number for which to find the square root. It must be a non-negative number.
+       - **Description**: The `math.sqrt()` function returns the square root of a given number. This function is part of the `math` module.
 
-        - **Example**:
-          ```python
-          import math
-          result = math.sqrt(16)
-          print(result)  # Output: 4.0
-          ```
+       - **Syntax**: `math.sqrt(x)`
 
-       ---
+         - `x`: The number for which to find the square root. It must be a non-negative number.
+
+       - **Example**:
+         ```python
+         import math
+         result = math.sqrt(16)
+         print(result)  # Output: 4.0
+         ```
+
+       ***
 
     5. **`math.factorial()`**:
-        - **Description**: The `math.factorial()` function returns the factorial of a given non-negative integer. Factorial of a number `n` is the product of all positive integers less than or equal to `n`.
 
-        - **Syntax**: `math.factorial(x)`
-          - `x`: A non-negative integer.
+       - **Description**: The `math.factorial()` function returns the factorial of a given non-negative integer. Factorial of a number `n` is the product of all positive integers less than or equal to `n`.
 
-        - **Example**:
-          ```python
-          import math
-          result = math.factorial(5)
-          print(result)  # Output: 120  (5! = 5 * 4 * 3 * 2 * 1)
-          ```
+       - **Syntax**: `math.factorial(x)`
 
-    ---
+         - `x`: A non-negative integer.
+
+       - **Example**:
+         ```python
+         import math
+         result = math.factorial(5)
+         print(result)  # Output: 120  (5! = 5 * 4 * 3 * 2 * 1)
+         ```
+
+    ***
 
 27. **Explain the use if in and not in operator in with suitable program.**
 
@@ -421,6 +434,99 @@
     ***
 
 28. **The strings are immutable. Justify.**
+
+    In Python, strings are immutable, meaning that once a string is created, its content cannot be changed. Below are key points that illustrate why strings are immutable.
+
+    ***
+
+    1. Unchangeable Content
+
+        Once you create a string, its content is fixed and cannot be altered. Python does not allow modifying strings in place. If any operation seems to modify a string, it actually creates a **new string** instead of altering the original one.
+
+        **Example**:
+
+        ```python
+        s = "Hello"
+        s = s + " World"  # Creates a new string "Hello World"
+        print(s)  # Output: Hello World
+        ```
+
+        In this example, `s` is not modified; instead, a new string `"Hello World"` is created, and `s` is updated to reference this new string.
+
+        ***
+
+     2. No In-Place Modification
+
+          You cannot change individual characters in a string because strings do not support item assignment. Trying to do so will result in a `TypeError`.
+
+          **Example**:
+
+          ```python
+          s = "Python"
+          # Trying to modify the first character raises a TypeError
+          try:
+              s[0] = 'J'
+          except TypeError as e:
+              print("Error:", e)  # Output: Error: 'str' object does not support item assignment
+          ```
+
+          This occurs because Python strings are immutable, and you cannot alter their individual elements.
+
+          ***
+
+    3. Efficiency and Performance
+
+        Immutability allows Python to optimize memory usage by reusing string objects, especially for frequently used small string literals. Python can point multiple variables to the same string object if its content is the same, saving memory and improving performance.
+
+        **Example**:
+
+        ```python
+        a = "Hello"
+        b = "Hello"
+        print(a is b)  # Output: True (both 'a' and 'b' point to the same memory location)
+        ```
+
+        In this case, Python reuses the same memory location for both `a` and `b` because strings are immutable.
+
+        ***
+
+    4. Hashing and Dictionary Keys
+
+        Strings can be used as keys in dictionaries and elements in sets because they are **hashable**. An object’s hash value remains constant if the object is immutable. If strings were mutable, their hash values could change, making them unsuitable for use as dictionary keys.
+
+        **Example**:
+
+        ```python
+        d = {"name": "Alice"}
+        print(d["name"])  # Output: Alice
+        ```
+
+        Since strings are immutable, their hash value stays constant, making them ideal for dictionary keys.
+
+        ***
+
+    5. Safety
+
+          Immutability ensures that strings are safe from accidental changes, which is crucial in multi-threaded environments. When different parts of a program share the same string, immutability guarantees that no thread can alter the string's content unexpectedly.
+
+        **Example Demonstrating Immutability**:
+
+        ```python
+        s = "Immutable"
+
+        # Trying to modify the string raises an error
+        try:
+            s[0] = "M"
+        except TypeError as e:
+            print("Error:", e)  # Output: Error: 'str' object does not support item assignment
+
+        # To "change" a string, create a new one
+        new_s = "M" + s[1:]
+        print("New string:", new_s)  # Output: Mutable
+        ```
+
+      ***
+
 29. **Explain string operations with an example.**
 30. **Explain the lower(), Split(), find(), len(), isdigit() function with example**  
     [Answer]
