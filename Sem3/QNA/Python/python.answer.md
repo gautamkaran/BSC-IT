@@ -312,10 +312,43 @@
 
     ***
 
-20. **What is a recursive function? Write its advantages. Explain with examples.**
+20. **What is a recursive function? Write its advantages. Explain with examples.**  
+ [Answer]
 
+    A recursive function in programming is a function that calls itself in its definition to solve a problem. This approach is often used to solve problems that can be broken down into smaller, similar subproblems.
+
+    ### Key Components of Recursion
+    1. **Base Case**: This is a condition that stops the recursion. Without a base case, the function would call itself indefinitely, leading to a stack overflow.
+    2. **Recursive Case**: This is where the function calls itself with a modified argument, bringing the problem closer to the base case.
+
+    ## Advantages of Recursive Functions
+    1. **Simplicity**: Recursive functions can simplify the code, making it easier to read and maintain, especially for problems that have a natural recursive structure (e.g., tree traversals).
+    2. **Reduction in Code Size**: They often lead to fewer lines of code compared to iterative solutions.
+    3. **Problem Solving for Complex Structures**: Recursive solutions are particularly useful for problems involving hierarchical structures, such as file directories or organizational charts.
+
+    ## Example: Factorial Calculation
+    The factorial of a number \( n \) (denoted as \( n! \)) is the product of all positive integers less than or equal to \( n \). For instance, \( 5! = 5 \times 4 \times 3 \times 2 \times 1 = 120 \).
+
+    ### Recursive Function for Factorial
+    Here's how you can implement a recursive function to calculate the factorial of a number in Python:
+
+    ```python
+    def factorial(n):
+        # Base Case
+        if n == 0 or n == 1:
+            return 1
+        # Recursive Case
+        else:
+            return n * factorial(n - 1)
+
+    # Example usage
+    result = factorial(5)  # Output: 120
+    print(result)  # Output: 120
+   ---
 21. **What are different type errors in python?**
 
+
+22. **Write a bitwise operator in python.**
     1. AND (&)
 
        - Performs a bitwise AND operation between two integers.
@@ -380,8 +413,7 @@
          result = a >> 2  # binary: 0011, which is 3 in decimal
          print(result)  # Output: 3
          ```
-
-22. **Write a bitwise operator in python.**
+    ---
 23. **Write a python program to display the following series**
 
     ```code
