@@ -169,7 +169,51 @@
   ***
 
 17. **What are different ways to create strings in python**
-18. **Write a note on string slicing in python**
+18. **Write a note on string slicing in python**  
+    String slicing is a technique in Python to extract a portion (or "slice") of a string. Python strings are sequences of characters, and you can access specific parts of them by using indexing and slicing.
+
+    ### Basic Syntax for Slicing
+
+    The general syntax for slicing a string is:
+
+    ```python
+    string[start:end:step]
+    ```
+
+    - `start`: The starting index (inclusive).
+    - `end`: The ending index (exclusive).
+    - `step`: The interval between characters (optional).
+
+    If any of these values are omitted, Python uses the following defaults:
+    - `start`: 0 (beginning of the string).
+    - `end`: Length of the string (end of the string).
+    - `step`: 1 (every character).
+
+    ### Examples of String Slicing
+
+    ```python
+    text = "Hello, World!"
+
+    # Extracting a slice from index 0 to 5 (exclusive)
+    slice1 = text[0:5]  # Output: Hello
+
+    # Extracting a slice from index 7 to the end
+    slice2 = text[7:]   # Output: World!
+
+    # Extracting a slice with a step of 2
+    slice3 = text[::2]  # Output: Hlo ol!
+
+    # Using negative indices
+    slice4 = text[-6:-1]  # Output: World
+    ```
+
+    ### Points to Remember
+
+    - **Indices start at 0**: The first character of a string has index 0.
+    - **`end` index is exclusive**: The character at the `end` index is not included in the slice.
+    - **Negative indices**: These count from the end of the string, where `-1` is the last character, `-2` is the second-last, and so on.
+
+    ---
 19. **Write a program to check if the entered year is leap year or not?**
 
     [Answer]
