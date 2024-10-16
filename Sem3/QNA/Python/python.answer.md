@@ -334,149 +334,241 @@
 
 28. **The strings are immutable. Justify.**
 29. **Explain string operations with an example.**
-30. **Explain the lower(), Split(), find(), len(), isdigit() function with example**
+30. **Explain the lower(), Split(), find(), len(), isdigit() function with example**  
+    [Answer]
+
+    1. **`lower()`**:
+
+       - **Description**: The `lower()` method converts all characters in a string to lowercase. It returns a new string with all characters in lowercase.
+
+       - **Syntax**: `string.lower()`
+
+       - **Example**:
+         ```python
+         text = "Hello, World!"
+         lower_text = text.lower()
+         print(lower_text)  # Output: hello, world!
+         ```
+
+       ***
+
+    2. **`split()`**:
+
+       - **Description**: The `split()` method divides a string into a list of substrings based on a specified delimiter (default is any whitespace). It returns a list of strings.
+
+       - **Syntax**: `string.split([separator[, maxsplit]])`
+
+         - `separator`: Optional. Specifies the delimiter to split on. Defaults to whitespace.
+         - `maxsplit`: Optional. Specifies the maximum number of splits. Defaults to -1, meaning "all occurrences."
+
+       - **Example**:
+         ```python
+         text = "apple banana mango"
+         result = text.split()
+         print(result)  # Output: ['apple', 'banana', 'mango']
+         ```
+
+       ***
+
+    3. **`find()`**:
+
+       - **Description**: The `find()` method searches for a specified substring within a string and returns the index of the first occurrence. If the substring is not found, it returns `-1`.
+
+       - **Syntax**: `string.find(substring[, start[, end]])`
+
+         - `substring`: The substring to search for.
+         - `start`: Optional. The starting index from where to begin the search.
+         - `end`: Optional. The index where the search should stop.
+
+       - **Example**:
+         ```python
+         text = "Welcome to Python programming"
+         result = text.find("Python")
+         print(result)  # Output: 11 (index where 'Python' starts)
+         ```
+
+       ***
+
+    4. **`len()`**:
+
+       - **Description**: The `len()` function returns the length of a string (i.e., the number of characters in the string).
+
+       - **Syntax**: `len(string)`
+
+       - **Example**:
+         ```python
+         text = "Hello, World!"
+         length = len(text)
+         print(length)  # Output: 13
+         ```
+
+       ***
+
+    5. **`isdigit()`**:
+
+       - **Description**: The `isdigit()` method checks if all the characters in a string are digits. It returns `True` if the string contains only numeric characters, otherwise `False`.
+
+       - **Syntax**: `string.isdigit()`
+
+       - **Example**:
+
+         ```python
+         text = "12345"
+         result = text.isdigit()
+         print(result)  # Output: True
+
+         text = "123abc"
+         result = text.isdigit()
+         print(result)  # Output: False
+         ```
+
+    ***
+
 31. **Explain any 10 string function with an example.**  
      [Answer]
 
-
     1. **`lower()`**:  
-      **Description**: The `lower()` method converts all characters in a string to lowercase. It returns a new string with all characters in lowercase.
+       **Description**: The `lower()` method converts all characters in a string to lowercase. It returns a new string with all characters in lowercase.
 
-        - **Syntax**: `string.lower()`
+       - **Syntax**: `string.lower()`
 
-        - **Example**:
-          ```python
-          text = "Hello, World!"
-          lower_text = text.lower()
-          print(lower_text)  # Output: hello, world!
-          ```
+       - **Example**:
+         ```python
+         text = "Hello, World!"
+         lower_text = text.lower()
+         print(lower_text)  # Output: hello, world!
+         ```
 
-    ---
+    ***
 
     2. **`split()`**:  
-      **Description**: The `split()` method divides a string into a list of substrings based on a specified delimiter (default is whitespace). It returns a list of strings.
+       **Description**: The `split()` method divides a string into a list of substrings based on a specified delimiter (default is whitespace). It returns a list of strings.
 
-        - **Syntax**: `string.split([separator[, maxsplit]])`
-          - `separator`: Optional. Specifies the delimiter to split on. Defaults to whitespace.
-          - `maxsplit`: Optional. Specifies the maximum number of splits. Defaults to -1, meaning "all occurrences."
+       - **Syntax**: `string.split([separator[, maxsplit]])`
 
-        - **Example**:
-          ```python
-          text = "apple banana mango"
-          result = text.split()
-          print(result)  # Output: ['apple', 'banana', 'mango']
-          ```
+         - `separator`: Optional. Specifies the delimiter to split on. Defaults to whitespace.
+         - `maxsplit`: Optional. Specifies the maximum number of splits. Defaults to -1, meaning "all occurrences."
 
-        ---
+       - **Example**:
+         ```python
+         text = "apple banana mango"
+         result = text.split()
+         print(result)  # Output: ['apple', 'banana', 'mango']
+         ```
+
+       ***
 
     3. **`find()`**:  
-      **Description**: The `find()` method searches for a specified substring within a string and returns the index of the first occurrence. If the substring is not found, it returns `-1`.
+       **Description**: The `find()` method searches for a specified substring within a string and returns the index of the first occurrence. If the substring is not found, it returns `-1`.
 
-        - **Syntax**: `string.find(substring[, start[, end]])`
-          - `substring`: The substring to search for.
-          - `start`: Optional. The starting index from where to begin the search.
-          - `end`: Optional. The index where the search should stop.
+       - **Syntax**: `string.find(substring[, start[, end]])`
 
-        - **Return Value**:
-          - Returns the index of the first occurrence of the substring.
-          - Returns `-1` if the substring is not found.
+         - `substring`: The substring to search for.
+         - `start`: Optional. The starting index from where to begin the search.
+         - `end`: Optional. The index where the search should stop.
 
-        - **Example**:
-          ```python
-          text = "Welcome to Python programming"
-          result = text.find("Python")
-          print(result)  # Output: 11 (index where 'Python' starts)
-          ``` 
+       - **Return Value**:
 
-       ---
+         - Returns the index of the first occurrence of the substring.
+         - Returns `-1` if the substring is not found.
+
+       - **Example**:
+         ```python
+         text = "Welcome to Python programming"
+         result = text.find("Python")
+         print(result)  # Output: 11 (index where 'Python' starts)
+         ```
+
+       ***
 
     4. **`replace()`**:  
-      **Description**: The `replace()` method replaces a specified substring with another substring within a string. It returns a new string with the replacements made.
+       **Description**: The `replace()` method replaces a specified substring with another substring within a string. It returns a new string with the replacements made.
 
-        - **Syntax**: `string.replace(old, new[, count])`
-          - `old`: The substring to be replaced.
-          - `new`: The substring to replace the old one.
-          - `count`: Optional. The maximum number of replacements to make. Defaults to all occurrences.
+       - **Syntax**: `string.replace(old, new[, count])`
 
-        - **Example**:
-          ```python
-          text = "Hello, World!"
-          replaced_text = text.replace("World", "Python")
-          print(replaced_text)  # Output: Hello, Python!
-          ```
+         - `old`: The substring to be replaced.
+         - `new`: The substring to replace the old one.
+         - `count`: Optional. The maximum number of replacements to make. Defaults to all occurrences.
 
-    ---
+       - **Example**:
+         ```python
+         text = "Hello, World!"
+         replaced_text = text.replace("World", "Python")
+         print(replaced_text)  # Output: Hello, Python!
+         ```
+
+    ***
 
     5. **`upper()`**:  
-      **Description**: The `upper()` method converts all characters in a string to uppercase. It returns a new string with all characters in uppercase.
+       **Description**: The `upper()` method converts all characters in a string to uppercase. It returns a new string with all characters in uppercase.
 
-        - **Syntax**: `string.upper()`
+       - **Syntax**: `string.upper()`
 
-        - **Example**:
-          ```python
-          text = "hello, world!"
-          upper_text = text.upper()
-          print(upper_text)  # Output: HELLO, WORLD!
-          ```
+       - **Example**:
+         ```python
+         text = "hello, world!"
+         upper_text = text.upper()
+         print(upper_text)  # Output: HELLO, WORLD!
+         ```
 
-    ---
+    ***
 
     6. **`join()`**:  
-      **Description**: The `join()` method concatenates the elements of an iterable (such as a list) into a single string, with each element separated by the string calling `join()`.
+       **Description**: The `join()` method concatenates the elements of an iterable (such as a list) into a single string, with each element separated by the string calling `join()`.
 
-        - **Syntax**: `separator.join(iterable)`
+       - **Syntax**: `separator.join(iterable)`
 
-        - **Example**:
-          ```python
-          words = ["apple", "banana", "mango"]
-          result = ", ".join(words)
-          print(result)  # Output: apple, banana, mango
-          ```
+       - **Example**:
+         ```python
+         words = ["apple", "banana", "mango"]
+         result = ", ".join(words)
+         print(result)  # Output: apple, banana, mango
+         ```
 
-    ---
+    ***
 
-    7. **`strip()`**:  
-      **Description**: The `strip()` method removes leading and trailing whitespace (or specified characters) from a string.
+    7.  **`strip()`**:  
+        **Description**: The `strip()` method removes leading and trailing whitespace (or specified characters) from a string.
 
-          - **Syntax**: `string.strip([chars])`
-            - `chars`: Optional. A string of characters to be removed. If omitted, it removes whitespace.
+            - **Syntax**: `string.strip([chars])`
+              - `chars`: Optional. A string of characters to be removed. If omitted, it removes whitespace.
 
-          - **Example**:
-            ```python
-            text = "  Hello, World!  "
-            stripped_text = text.strip()
-            print(stripped_text)  # Output: "Hello, World!"
-            ```
+            - **Example**:
+              ```python
+              text = "  Hello, World!  "
+              stripped_text = text.strip()
+              print(stripped_text)  # Output: "Hello, World!"
+              ```
 
-    ---
+    ***
 
     8. **`startswith()`**:  
-      **Description**: The `startswith()` method checks if a string starts with a specified prefix. It returns `True` if the string starts with the specified prefix, otherwise `False`.
+       **Description**: The `startswith()` method checks if a string starts with a specified prefix. It returns `True` if the string starts with the specified prefix, otherwise `False`.
 
-        - **Syntax**: `string.startswith(prefix[, start[, end]])`
+       - **Syntax**: `string.startswith(prefix[, start[, end]])`
 
-        - **Example**:
-          ```python
-          text = "Hello, World!"
-          result = text.startswith("Hello")
-          print(result)  # Output: True
-          ```
+       - **Example**:
+         ```python
+         text = "Hello, World!"
+         result = text.startswith("Hello")
+         print(result)  # Output: True
+         ```
 
-    ---
+    ***
 
     9. **`endswith()`**:  
-      **Description**: The `endswith()` method checks if a string ends with a specified suffix. It returns `True` if the string ends with the specified suffix, otherwise `False`.
+       **Description**: The `endswith()` method checks if a string ends with a specified suffix. It returns `True` if the string ends with the specified suffix, otherwise `False`.
 
-        - **Syntax**: `string.endswith(suffix[, start[, end]])`
+       - **Syntax**: `string.endswith(suffix[, start[, end]])`
 
-        - **Example**:
-          ```python
-          text = "Hello, World!"
-          result = text.endswith("World!")
-          print(result)  # Output: True
-          ```
+       - **Example**:
+         ```python
+         text = "Hello, World!"
+         result = text.endswith("World!")
+         print(result)  # Output: True
+         ```
 
-    ---
+    ***
 
     10. **`capitalize()`**:  
         **Description**: The `capitalize()` method converts the first character of a string to uppercase and the rest to lowercase. It returns a new string with the capitalized format.
@@ -489,7 +581,8 @@
           capitalized_text = text.capitalize()
           print(capitalized_text)  # Output: Hello, world!
           ```
-    ---
+
+    ***
 
 32. **Write a Python program to find those numbers which are divisible by 7 and multiples of 5, between 1500 and 2700 (both included).**  
     [Answer]
