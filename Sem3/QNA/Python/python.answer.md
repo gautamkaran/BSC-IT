@@ -1,9 +1,9 @@
 ## Python QB
 
 1.  **List in python are mutable. Justify**  
-    [Answer]  
-    
-     In Python, lists are considered **mutable** data structures, meaning that their content can be changed after they are created. This mutability provides several advantages and functionalities, which can be demonstrated through various operations:
+    [Answer]
+
+    In Python, lists are considered **mutable** data structures, meaning that their content can be changed after they are created. This mutability provides several advantages and functionalities, which can be demonstrated through various operations:
 
     1. Modifying Elements  
        You can change the value of an element in a list using its index. For example:
@@ -51,6 +51,64 @@
     ***
 
 2.  **Write short note on build in list operators**
+    Python provides several built-in operators that can be used with lists, enhancing their functionality and allowing for convenient manipulation of list data structures. Below are the key list operators:
+
+    1. Concatenation (`+`)  
+       The concatenation operator `+` is used to combine two or more lists into a single list.  
+        **Example:**
+
+       ```python
+         list1 = [1, 2, 3]
+         list2 = [4, 5, 6]
+         combined_list = list1 + list2
+         print(combined_list)  # Output: [1, 2, 3, 4, 5, 6]
+       ```
+
+    2. Repetition (_)  
+        The repetition operator _ is used to repeat a list a specified number of times.
+
+       **Example:**
+
+       ```python
+       list1 = [1, 2, 3]
+       repeated_list = list1 * 2
+       print(repeated_list)  # Output: [1, 2, 3, 1, 2, 3]
+       ```
+
+    3. Membership (in and not in)  
+       The membership operators in and not in are used to check if an element exists in a list.
+
+       **Example:**
+
+       ```python
+       list1 = [1, 2, 3, 4, 5]
+       print(3 in list1) # Output: True
+       print(6 not in list1) # Output: True
+       ```
+
+    4. Indexing and Slicing
+       Lists support indexing and slicing to access elements or sublists. Indexing is done with square brackets, and it can handle negative indices as well.
+       **Example:**
+
+       ```python
+       list1 = [10, 20, 30, 40, 50]
+       print(list1[0]) # Output: 10 (first element)
+       print(list1[-1]) # Output: 50 (last element)
+       print(list1[1:4]) # Output: [20, 30, 40] (slicing)
+       ```
+
+    5. Length (len())
+       The len() function returns the number of elements in a list.
+
+       **Example:**
+
+       ```python
+        list1 = [1, 2, 3, 4]
+        print(len(list1))  # Output: 4
+       ```
+
+    ***
+
 3.  **What are lists? How to define and access the elements of list.**
 4.  **What is dictionary? How create and access it? Explain the properties of dictionary keys.**
 5.  **Write short note on tuple in Python.**
