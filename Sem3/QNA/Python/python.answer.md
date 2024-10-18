@@ -107,9 +107,76 @@
         print(len(list1))  # Output: 4
        ```
 
+    6. Slicing ([:]):
+       The slicing operator extracts a portion of a list.
+
+       ```python
+       Copy code
+       my_list = [1, 2, 3, 4, 5]
+       print(my_list[1:4])  # Output: [2, 3, 4]
+       ```
+
     ***
 
 3.  **What are lists? How to define and access the elements of list.**
+    A **list** in Python is a collection of items (elements) that are ordered and changeable (mutable). Lists can hold items of any data type, including integers, floats, strings, or even other lists.
+
+    ### Defining a List
+
+    Lists are created using square brackets []. You can define a list with any number of elements, and the elements can be of mixed types.
+
+    ```python
+    # Empty list
+    my_list = []
+
+    # List with integers
+    my_list = [1, 2, 3, 4, 5]
+
+    # List with mixed data types
+    my_list = [1, "apple", 3.14, True]
+    ```
+
+    ### Accessing List Elements
+
+      You can access elements in a list using indexing. Indexing starts from 0 for the first element, and negative indexing starts from -1 for the last element.
+
+      ```python
+      my_list = ["apple", "banana", "cherry"]
+
+      # Accessing elements
+      first_item = my_list[0]   # Output: 'apple'
+      second_item = my_list[1]  # Output: 'banana'
+
+      # Accessing the last element (using negative indexing)
+      last_item = my_list[-1]   # Output: 'cherry'
+
+      # Slicing (accessing a range of elements)
+      sub_list = my_list[0:2]   # Output: ['apple', 'banana']
+      ```
+
+    ### Modifying a List
+
+     Since lists are mutable, you can change their content by directly assigning new values:
+
+      ```python
+      Copy code
+      my_list = ["apple", "banana", "cherry"]
+
+      # Modifying an element
+      my_list[1] = "orange"  # ['apple', 'orange', 'cherry']
+
+      # Appending a new element
+      my_list.append("grape")  # ['apple', 'orange', 'cherry', 'grape']
+
+      # Removing an element
+      my_list.remove("orange")  # ['apple', 'cherry', 'grape']
+
+      # Inserting an element at a specific position
+      my_list.insert(1, "kiwi")  # ['apple', 'kiwi', 'cherry', 'grape']
+      ```
+
+    ***
+
 4.  **What is dictionary? How create and access it? Explain the properties of dictionary keys.**
 5.  **Write short note on tuple in Python.**
 6.  **What is Exception? List and explain any five built in Exceptions in Python.**
@@ -133,36 +200,36 @@
 12. **Write a python program to calculate the area of a triangle and circle and print the result.
     Note: Take input from the user.**
 
-      [Answer]
+    [Answer]
 
-      ```python
-      '''---------- Area of triangle Program ------- '''
-      # Read Base, Heigth
-      Base = int(input("Enter Base: "))
-      Heigth = int(input("Enter Heigth: "))
+    ```python
+    '''---------- Area of triangle Program ------- '''
+    # Read Base, Heigth
+    Base = int(input("Enter Base: "))
+    Heigth = int(input("Enter Heigth: "))
 
-      # Formula => AreaOfTriangle = (Base * Heigth) / 2
-      AreaOfTriangle = (Base * Heigth) / 2
+    # Formula => AreaOfTriangle = (Base * Heigth) / 2
+    AreaOfTriangle = (Base * Heigth) / 2
 
-      # print result
-      print("Area Of Triangle = ", AreaOfTriangle)
-      '''------------***************--------------'''
+    # print result
+    print("Area Of Triangle = ", AreaOfTriangle)
+    '''------------***************--------------'''
 
 
-      '''---------- Area of circle Program --------'''
-      # Read radius
-      radius = int(input("Enter radius: "))
-      pi = 3.14
+    '''---------- Area of circle Program --------'''
+    # Read radius
+    radius = int(input("Enter radius: "))
+    pi = 3.14
 
-      # Formula => AreaOfCircle = pi * radius ** 2
-      AreaOfCircle = pi * radius ** 2
+    # Formula => AreaOfCircle = pi * radius ** 2
+    AreaOfCircle = pi * radius ** 2
 
-      # print result
-      print("Area Of Circle = ", AreaOfCircle)
-      '''------------***************--------------'''
-      ```
+    # print result
+    print("Area Of Circle = ", AreaOfCircle)
+    '''------------***************--------------'''
+    ```
 
-     ***
+    ***
 
 13. **Explain features of python programs.**
 
