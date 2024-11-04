@@ -1,0 +1,1 @@
+# Configure the widget with various options like: bg=”red”, family=”times”, size=18 (IT LAB)

@@ -1,0 +1,1 @@
+# Design a simple database application that stores the records and retrieves the same. (IT LAB)

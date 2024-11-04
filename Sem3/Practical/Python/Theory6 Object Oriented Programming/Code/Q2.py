@@ -1,0 +1,1 @@
+# Implement the concept of inheritance using python (IT LAB)
