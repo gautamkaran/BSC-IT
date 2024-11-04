@@ -1,1 +1,1 @@
-# Design a simple database application that stores the records and retrieves the same. (IT LAB)
+# Design a database application to search the specified record from the database. (IT LAB)
