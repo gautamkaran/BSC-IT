@@ -50,7 +50,6 @@ my_list.pop(2)
 You can modify a list element by directly assigning a new value to a specific index.
 
 ```python
-Copy code
 my_list[0] = "pear"
 ```
 ## List Slicing
