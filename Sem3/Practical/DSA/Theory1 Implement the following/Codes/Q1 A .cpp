@@ -56,7 +56,6 @@ int Sorting(int array[], int size)
 
 int main()
 {
-  cout << "\nWelcome to 1D Array Operation Program.\n";
   int choice;
   int array[5] = {3, 4, 1, 7, 5};
   int size = 5;
