@@ -1,6 +1,3 @@
-/**
- * Write a program for shortest path diagram.
- */
 #include <iostream>
 #include <vector>
 #include <climits>

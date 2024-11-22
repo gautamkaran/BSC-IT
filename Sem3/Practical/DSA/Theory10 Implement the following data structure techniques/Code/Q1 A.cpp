@@ -1,6 +1,3 @@
-/**
- * Write a program to generate the adjacency matrix.
- */
 #include <iostream>
 #include <vector>
 using namespace std;

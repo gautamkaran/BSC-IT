@@ -1,6 +1,3 @@
-/**
- * Write a program to implement selection sort.
- */
 #include <iostream>
 using namespace std;
 

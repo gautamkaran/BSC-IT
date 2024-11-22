@@ -1,6 +1,3 @@
-/**
- * Write a program to insert the element into minimum heap.
- */
 #include <iostream>
 #include <vector>
 using namespace std;

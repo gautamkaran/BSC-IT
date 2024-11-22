@@ -1,8 +1,3 @@
-/**
- * Write a program to store the elements in 1-D array and perform the
- * operations like searching, sorting and reversing the elements. [Menu Driven]
- */
-
 #include <iostream>
 using namespace std;
 
@@ -97,3 +92,4 @@ int main()
     cout << "\n----------------------------------------------\n";
   } while (choice != 5);
 }
+

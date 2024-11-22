@@ -1,7 +1,3 @@
-/**
- * Write a program to search the element using binary search.
- */
-
 #include <iostream>
 using namespace std;
 

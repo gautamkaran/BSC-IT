@@ -1,6 +1,3 @@
-/**
- * Write a program to insert the element into maximum heap.
- */
 #include <iostream>
 #include <vector>
 using namespace std;

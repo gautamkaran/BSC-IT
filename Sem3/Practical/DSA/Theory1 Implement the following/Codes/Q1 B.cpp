@@ -23,12 +23,25 @@ void bubbleSort(int arr[], int size) {
     }
 }
 
+
+
+
+
+
+
+
+
 // Function to display the sorted array
 void displayArray(int arr[], int size) {
     cout << "Sorted Array: ";
     for (int i = 0; i < size; i++) cout << arr[i] << " ";
     cout << endl;
 }
+
+
+
+
+
 
 // Menu-driven function
 void menu() {
@@ -70,3 +83,4 @@ int main() {
     menu();
     return 0;
 }
+

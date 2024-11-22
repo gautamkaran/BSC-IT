@@ -1,7 +1,3 @@
-/**
- * Write a program to create a single linked list and display the node elements in
- * reverse order.
- */
 #include <iostream>
 using namespace std;
 
@@ -48,6 +44,12 @@ void displayReverse(Node *head)
   displayReverse(head->next);
   cout << head->data << " ";
 }
+
+
+
+
+
+
 
 // Function to display linked list
 void displayList(Node *head)

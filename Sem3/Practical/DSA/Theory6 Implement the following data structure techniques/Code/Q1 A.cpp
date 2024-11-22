@@ -1,6 +1,3 @@
-/**
- * Write a program to implement merge sort.
- */
 #include <iostream>
 using namespace std;
 

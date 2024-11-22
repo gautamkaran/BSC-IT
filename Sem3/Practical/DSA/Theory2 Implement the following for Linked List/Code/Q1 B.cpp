@@ -1,6 +1,3 @@
-/**
- * Write a program to search the elements in the linked list and display the same
- */
 #include <iostream>
 using namespace std;
 
@@ -18,6 +15,21 @@ Node *createNode(int data)
   newNode->data = data;
   newNode->next = nullptr;
   return newNode;
+}
+
+
+// Function to search an element in the linked list
+bool searchElement(Node *head, int key)
+{
+  while (head != nullptr)
+  {
+    if (head->data == key)
+    {
+      return true;
+    }
+    head = head->next;
+  }
+  return false;
 }
 
 // Function to insert a new node at the end
@@ -39,19 +51,12 @@ void insertAtEnd(Node *&head, int data)
   }
 }
 
-// Function to search an element in the linked list
-bool searchElement(Node *head, int key)
-{
-  while (head != nullptr)
-  {
-    if (head->data == key)
-    {
-      return true;
-    }
-    head = head->next;
-  }
-  return false;
-}
+
+
+
+
+
+
 
 // Function to display the linked list
 void displayList(Node *head)

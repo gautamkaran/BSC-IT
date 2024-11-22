@@ -1,6 +1,3 @@
-/**
- * Write a program for inorder, postorder and preorder traversal of tree
- */
 #include <iostream>
 using namespace std;
 

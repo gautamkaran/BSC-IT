@@ -1,6 +1,3 @@
-/**
- * Write a program to implement the concept of Circular Queue
- */
 #include <iostream>
 using namespace std;
 
@@ -97,7 +94,7 @@ int main() {
             case 3:
                 q.display();
                 break;
-            case 4:
+            case 4:++++
                 cout << "Exiting the program.\n";
                 return 0;
             default:

@@ -1,7 +1,3 @@
-/**
- * Write a program to implement Tower of Hanoi problem.
- */
-
 #include <iostream>
 using namespace std;
 
@@ -33,3 +29,4 @@ int main() {
 
     return 0;
 }
+

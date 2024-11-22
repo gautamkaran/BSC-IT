@@ -1,62 +1,94 @@
-/**
- * Write a program to insert the element into minimum heap.
- */
 #include <iostream>
-#include <vector>
 using namespace std;
 
-// Function to maintain the min-heap property by "heapifying" up
-void heapifyUp(vector<int>& heap, int index) {
-    // While the element is not the root and is smaller than its parent
-    while (index > 0) {
-        int parent = (index - 1) / 2;  // Calculate the index of the parent
+class HashTable {
+    int* table;
+    int size;
 
-        // If the current element is smaller than the parent, swap them
-        if (heap[index] < heap[parent]) {
-            swap(heap[index], heap[parent]);
-            index = parent;  // Move the index to the parent's position
-        } else {
-            break;  // Heap property is satisfied, exit the loop
+public:
+    HashTable(int s) : size(s) {
+        table = new int[size];
+        for (int i = 0; i < size; i++) table[i] = -1;  // Initialize with -1 (empty)
+    }
+
+    // Hash function
+    int hashFunction(int key) {
+        return key % size;
+    }
+
+    // Insert key into the hash table
+    void insert(int key) {
+        int index = hashFunction(key);
+        int originalIndex = index;
+
+        while (table[index] != -1) {  // Linear probing
+            index = (index + 1) % size;
+            if (index == originalIndex) {
+                cout << "Hash table is full!" << endl;
+                return;
+            }
+        }
+        table[index] = key;
+    }
+
+    // Search for a key
+    bool search(int key) {
+        int index = hashFunction(key);
+        int originalIndex = index;
+
+        while (table[index] != -1) {
+            if (table[index] == key) return true;
+            index = (index + 1) % size;
+            if (index == originalIndex) break;
+        }
+        return false;
+    }
+
+    // Delete a key
+    void deleteKey(int key) {
+        int index = hashFunction(key);
+        int originalIndex = index;
+
+        while (table[index] != -1) {
+            if (table[index] == key) {
+                table[index] = -1;
+                return;
+            }
+            index = (index + 1) % size;
+            if (index == originalIndex) break;
         }
     }
-}
 
-// Function to insert an element into the min-heap
-void insertMinHeap(vector<int>& heap, int value) {
-    // Add the new element at the end of the heap
-    heap.push_back(value);
-    
-    // Call heapifyUp to ensure the min-heap property is maintained
-    heapifyUp(heap, heap.size() - 1);
-}
-
-// Function to display the elements of the heap
-void displayHeap(const vector<int>& heap) {
-    cout << "Heap elements: ";
-    for (int i = 0; i < heap.size(); i++) {
-        cout << heap[i] << " ";
+    // Display the hash table
+    void display() {
+        for (int i = 0; i < size; i++)
+            if (table[i] != -1)
+                cout << i << " --> " << table[i] << endl;
+            else
+                cout << i << " --> Empty" << endl;
     }
-    cout << endl;
-}
+
+    ~HashTable() {
+        delete[] table;
+    }
+};
 
 int main() {
-    vector<int> minHeap;  // Initialize an empty min-heap
+    HashTable ht(10);
+    ht.insert(10);
+    ht.insert(20);
+    ht.insert(30);
+    ht.insert(25);  // Collision with key 10, linear probing will occur
 
-    int n, value;
+    ht.display();
 
-    // Input the number of elements to be inserted into the heap
-    cout << "Enter the number of elements to insert into the heap: ";
-    cin >> n;
+    if (ht.search(20))
+        cout << "20 found" << endl;
+    else
+        cout << "20 not found" << endl;
 
-    // Insert elements into the min heap
-    for (int i = 0; i < n; i++) {
-        cout << "Enter value " << (i + 1) << ": ";
-        cin >> value;
-        insertMinHeap(minHeap, value);  // Insert element and maintain heap property
-    }
-
-    // Display the min heap
-    displayHeap(minHeap);
+    ht.deleteKey(25);
+    ht.display();
 
     return 0;
 }

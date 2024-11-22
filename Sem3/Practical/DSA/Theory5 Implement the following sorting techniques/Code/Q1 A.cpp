@@ -1,7 +1,3 @@
-/**
- * Write a program to implement bubble sort.
- */
-
 #include <iostream>
 using namespace std;
 
